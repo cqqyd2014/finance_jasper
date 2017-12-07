@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.4.0.final using JasperReports Library version 6.4.1  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="BillSub_A4" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ea4c1c1a-327d-4bd8-9da3-4371f7588ca6">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Bill-DataAdapter.xml"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="bank_code" class="java.lang.String">
+		<fieldDescription><![CDATA[bank_code]]></fieldDescription>
+	</field>
+	<field name="search_par_code" class="java.lang.String">
+		<fieldDescription><![CDATA[search_par_code]]></fieldDescription>
+	</field>
+	<field name="search_par_code_name" class="java.lang.String">
+		<fieldDescription><![CDATA[search_par_code_name]]></fieldDescription>
+	</field>
+	<field name="search_par_value" class="java.lang.String">
+		<fieldDescription><![CDATA[search_par_value]]></fieldDescription>
+	</field>
+	<field name="detail_uuid" class="java.lang.String">
+		<fieldDescription><![CDATA[detail_uuid]]></fieldDescription>
+	</field>
+	<field name="business_code_name" class="java.lang.String">
+		<fieldDescription><![CDATA[business_code_name]]></fieldDescription>
+	</field>
+	<field name="bank_name" class="java.lang.String">
+		<fieldDescription><![CDATA[bank_name]]></fieldDescription>
+	</field>
+	<field name="bill_uuid" class="java.lang.String">
+		<fieldDescription><![CDATA[bill_uuid]]></fieldDescription>
+	</field>
+	<field name="business_code" class="java.lang.String">
+		<fieldDescription><![CDATA[business_code]]></fieldDescription>
+	</field>
+	<detail>
+		<band height="74" splitType="Stretch">
+			<textField>
+				<reportElement x="20" y="10" width="80" height="50" uuid="b9c7d4c6-340c-4674-9090-8e945bcbd842"/>
+				<textElement>
+					<font fontName="fangsong" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bank_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="10" width="60" height="50" uuid="8953deaa-1589-4065-a51c-d349795709ab"/>
+				<textElement>
+					<font fontName="fangsong" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{search_par_code_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="120" y="10" width="70" height="50" uuid="20e909ae-2b92-4d6f-ab97-5486fa71e39a"/>
+				<textElement>
+					<font fontName="fangsong" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{business_code_name}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="11" y="0" width="1" height="68" uuid="1c3cece1-14c8-4329-9e1c-682138813d15"/>
+			</line>
+			<line>
+				<reportElement x="11" y="68" width="541" height="1" uuid="9a3d9e85-ddb1-4c62-be91-c5cf05a6d993"/>
+			</line>
+			<line>
+				<reportElement x="551" y="0" width="1" height="68" uuid="edc9c3b9-18f0-4bab-9ccc-0ee528dffb9f"/>
+			</line>
+			<line>
+				<reportElement x="110" y="0" width="1" height="69" uuid="3038b589-013e-4cc9-a94e-a610fc265c80"/>
+			</line>
+			<line>
+				<reportElement x="198" y="0" width="1" height="69" uuid="cb3d5e0e-36ce-42bc-8648-9afde0fb6ca2"/>
+			</line>
+			<textField>
+				<reportElement x="290" y="10" width="254" height="50" uuid="1604a99e-5a8a-422d-af88-17b5b8da2835"/>
+				<textElement>
+					<font fontName="fangsong" size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{search_par_value}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="280" y="0" width="1" height="69" uuid="1557de4c-a730-4beb-a71d-97b7c079b751"/>
+			</line>
+			<line>
+				<reportElement x="11" y="0" width="541" height="1" uuid="f2387bdf-c4ab-49b6-bdea-eaeba18c4747"/>
+			</line>
+		</band>
+	</detail>
+</jasperReport>

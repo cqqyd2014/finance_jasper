@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beanDataAdapter class="net.sf.jasperreports.data.bean.BeanDataAdapterImpl"><name>bill_data_adapter</name><factoryClass>gov.cqaudit.finance.common.jasper_data_factory.BillFactory</factoryClass><methodName>getBeanCollection</methodName><useFieldDescription>false</useFieldDescription></beanDataAdapter>
