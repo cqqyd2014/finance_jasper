@@ -41,6 +41,12 @@
 	<field name="business_code" class="java.lang.String">
 		<fieldDescription><![CDATA[business_code]]></fieldDescription>
 	</field>
+	<field name="start_dat_print" class="java.lang.String">
+		<fieldDescription><![CDATA[start_dat_print]]></fieldDescription>
+	</field>
+	<field name="end_dat_print" class="java.lang.String">
+		<fieldDescription><![CDATA[end_dat_print]]></fieldDescription>
+	</field>
 	<columnHeader>
 		<band height="41">
 			<line>
@@ -50,95 +56,110 @@
 				<reportElement x="4" y="40" width="540" height="1" uuid="090dcb5d-0db4-4eb7-aee7-f874d87eca76"/>
 			</line>
 			<line>
-				<reportElement x="118" y="0" width="1" height="40" uuid="0aa22280-5548-43ac-9984-3421d3393115"/>
-			</line>
-			<line>
-				<reportElement x="217" y="0" width="1" height="40" uuid="618c55ab-8236-4b5b-9bae-69b6fa187fbb"/>
-			</line>
-			<line>
-				<reportElement x="308" y="0" width="1" height="40" uuid="94fae26f-7efd-44ab-99c1-dbbb26e259e3"/>
-			</line>
-			<line>
 				<reportElement x="543" y="0" width="1" height="40" uuid="4c807b1d-f812-44b7-83dd-e224115211be"/>
 			</line>
 			<staticText>
-				<reportElement x="26" y="5" width="70" height="30" uuid="7464e17d-6aa6-438e-9638-1594fb2a1493"/>
+				<reportElement x="20" y="5" width="70" height="30" uuid="7464e17d-6aa6-438e-9638-1594fb2a1493"/>
 				<textElement>
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<text><![CDATA[银行名称]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="133" y="5" width="70" height="30" uuid="b58faf95-94eb-4be6-80d1-ed351bcef252"/>
+				<reportElement x="105" y="5" width="70" height="30" uuid="b58faf95-94eb-4be6-80d1-ed351bcef252"/>
 				<textElement>
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<text><![CDATA[业务类型]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="228" y="5" width="70" height="30" uuid="04a25833-2596-4801-96c3-90537dd59e6b"/>
+				<reportElement x="186" y="5" width="70" height="30" uuid="04a25833-2596-4801-96c3-90537dd59e6b"/>
 				<textElement>
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<text><![CDATA[查询要素]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="390" y="5" width="70" height="30" uuid="378bd55d-9bc0-44da-852b-1cb7b1071a2d"/>
+				<reportElement x="415" y="5" width="70" height="30" uuid="378bd55d-9bc0-44da-852b-1cb7b1071a2d"/>
 				<textElement>
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<text><![CDATA[查询条件]]></text>
 			</staticText>
+			<staticText>
+				<reportElement x="270" y="5" width="70" height="30" uuid="1790e036-4941-4108-885c-7a41f1222ba7"/>
+				<textElement>
+					<font fontName="fangsong" size="16"/>
+				</textElement>
+				<text><![CDATA[查询时间（起止）]]></text>
+			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="41" splitType="Stretch">
+		<band height="56" splitType="Stretch">
 			<line>
-				<reportElement x="4" y="0" width="1" height="40" uuid="d61582f5-092c-48e3-a720-7a7c6f4117df"/>
+				<reportElement x="4" y="0" width="1" height="55" uuid="d61582f5-092c-48e3-a720-7a7c6f4117df"/>
 			</line>
 			<line>
-				<reportElement x="4" y="40" width="540" height="1" uuid="f7c8249b-7b84-42bf-8bcb-30ec51c8e03c"/>
+				<reportElement x="4" y="55" width="540" height="1" uuid="f7c8249b-7b84-42bf-8bcb-30ec51c8e03c"/>
 			</line>
 			<line>
-				<reportElement x="543" y="0" width="1" height="41" uuid="85ed3845-299d-41e8-81b4-8743e6928569"/>
+				<reportElement x="543" y="0" width="1" height="55" uuid="85ed3845-299d-41e8-81b4-8743e6928569"/>
 			</line>
 			<line>
-				<reportElement x="118" y="0" width="1" height="40" uuid="7d2f1159-0b77-4c60-b613-358cdd920f63"/>
+				<reportElement x="100" y="-41" width="1" height="96" uuid="7d2f1159-0b77-4c60-b613-358cdd920f63"/>
 			</line>
 			<textField>
-				<reportElement x="4" y="1" width="114" height="39" uuid="02e5f3f5-8c64-4c94-bf1a-787f4f8f9212"/>
+				<reportElement x="5" y="8" width="91" height="39" uuid="02e5f3f5-8c64-4c94-bf1a-787f4f8f9212"/>
 				<textElement textAlignment="Center">
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{bank_name}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="217" y="0" width="1" height="40" uuid="18f13087-9c7f-45c6-bea5-c8c136337f8c"/>
+				<reportElement x="182" y="-41" width="1" height="96" uuid="18f13087-9c7f-45c6-bea5-c8c136337f8c"/>
 			</line>
 			<textField>
-				<reportElement x="120" y="1" width="96" height="39" uuid="d1c3a03a-1d9d-4be9-8591-f156b11902f5"/>
+				<reportElement x="100" y="8" width="80" height="39" uuid="d1c3a03a-1d9d-4be9-8591-f156b11902f5"/>
 				<textElement textAlignment="Center">
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{business_code_name}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="308" y="0" width="1" height="40" uuid="fd1960e3-4da6-4afc-ad47-27d2fb86092e"/>
+				<reportElement x="260" y="-41" width="1" height="96" uuid="fd1960e3-4da6-4afc-ad47-27d2fb86092e"/>
 			</line>
 			<textField>
-				<reportElement x="219" y="1" width="88" height="39" uuid="54f2d973-3165-42d0-b983-76d725ea3411"/>
+				<reportElement x="182" y="8" width="78" height="39" uuid="54f2d973-3165-42d0-b983-76d725ea3411"/>
 				<textElement textAlignment="Center">
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{search_par_code_name}]]></textFieldExpression>
 			</textField>
 			<textField>
-				<reportElement x="310" y="1" width="230" height="39" uuid="93291340-f27c-43bd-8614-f51ddabd0e71"/>
+				<reportElement x="360" y="8" width="180" height="39" uuid="93291340-f27c-43bd-8614-f51ddabd0e71"/>
 				<textElement textAlignment="Center">
 					<font fontName="fangsong" size="16"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{search_par_value}]]></textFieldExpression>
 			</textField>
+			<textField>
+				<reportElement x="263" y="8" width="91" height="21" uuid="3780cf87-2457-4c3c-9a38-fe1b37c77497"/>
+				<textElement textAlignment="Center">
+					<font fontName="fangsong" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["起"+$F{start_dat_print}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="263" y="29" width="91" height="21" uuid="b4e7e88a-6f6f-40a6-a7ae-7494e77498ee"/>
+				<textElement textAlignment="Center">
+					<font fontName="fangsong" size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA["止"+$F{end_dat_print}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="354" y="-41" width="1" height="96" uuid="79ae6709-66cc-4120-af7d-feae3f34a7e6"/>
+			</line>
 		</band>
 	</detail>
 </jasperReport>
